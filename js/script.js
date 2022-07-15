@@ -8,7 +8,7 @@ buttons.forEach(button => {
         .querySelector("[data-slides")
 
         const activeSlide = slides.querySelector("[data-active]")
-        let newIndex = [...slides.children].indexOf(activeSlide) + offset
+        let newIndex = [...slides.children].indexOf(activeSlide) + offset /* <--- not sure how this works  */
         if (newIndex < 0) {
             newIndex = slides.children.length - 1
         }
